@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>DOM</title>
+        <style>
+            .Reyansh{
+                color:aqua;
+                background: green;
+                padding:5px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">Welcome</h1>
+        <p>Hello world</p>
+        <p>Bye world</p>
+        <script>
+            let div = document.createElement ('div');
+            div.className="Reyansh"; 
+            div.id="Reyu";
+            div.innerHTML="<p>Congrats you have done DOM</p>";
+            document.body.append(div);
+
+            let heading = document.getElementById("heading");
+            heading.innerHTML="<h1>to javascript</h1>";
+            document.queryselector('header p').innerHTML = "<strong>Good job</strong>";
+
+        </script>
+    </body>
+</html>
