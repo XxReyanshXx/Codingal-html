@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>My Hobbies</title>
+    <style>
+        .myFavorite {
+            color: violet;
+            background: aquamarine;
+        }
+
+        button {
+            display: block;
+            margin: 5px;
+
+        }
+
+        .booksmyfavorate {
+            margin-top: 12px;
+            margin-bottom: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Hobbies</h1>
+    <p id="story">I like playing cricket and football</p>
+    <button onclick="myFavorite()">Cricket and football</button>
+    <div class="booksmyfavorate">Next is ,reading books.Tell me your favorate book<input type="text" id="name"> </div>
+    <button onclick="booksaremyFavorite()">I love books</button>
+    <button onclick="donefinish()">Done</button>
+</body>
+<script>
+    function myFavorite() {
+        document.body.className = "myFavorite";
+
+
+
+    }
+    function booksaremyFavorite() {
+        document.getElementById("story").innerHTML = "My favorate book is jjk";
+    }
+    function donefinish() {
+        var personName = document.getElementById("name").value;
+        alert("Oh nice i like that too" + personName);
+    }
+</script>
+
+</html>
