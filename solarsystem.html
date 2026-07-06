@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Solar System</title>
+    <style>
+        .Solar system {
+            color: rgb(240, 43, 8);
+            background: rgb(234, 14, 219);
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Hi today i will tell you about Solar System</h1>
+    <p>About Solar System</p>
+    <p>Join my journy</p>
+    <script>
+        let div = document.createElement('div');
+        div.className = "Solar system";
+        div.id = "planetary system";
+        div.innerHTML = "<p>The solar system consists of the Sun and everything bound to it by gravity, including eight planets, dwarf planets, moons, asteroids, and comets. Formed roughly 4.6 billion years ago, it resides in the Milky Way galaxy and contains a central star (the Sun) which accounts for over \(99.8\%\) of the system's mass.</p>";
+        document.body.append(div);
+
+        let heading = document.getElementById("heading");
+        heading.innerHTML = "<h1>Hi today i will tell you about Solar System</h1>";
+        document.queryselector('header p').innerHTML = "<strong>Join my journy</strong>";
+
+    </script>
+</body>
+
+</html>
